@@ -1,4 +1,4 @@
-const initialState = 100;
+const initialState = 0;
 
 const amountReducer = (state = initialState, action)=>
 {
@@ -15,7 +15,7 @@ const amountReducer = (state = initialState, action)=>
                 return state - action.payload;
             }
             default :
-             return 100;
+             return state;
 
     }
 }
